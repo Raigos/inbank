@@ -1,16 +1,14 @@
 # inbank
 
-This template should help get you started developing with Vue 3 in Vite.
+This is in an Inbank test assigment
+It's the default way to run it. I also added some unit tests and one end2end test.
+You can see me using some weird clamp rule with my css a lot you can read more about it here
+https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
+I really think scalable sizes are the future in css
 
-## Recommended IDE Setup
+Thanks!
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
+#
 
 See [Vite Configuration Reference](https://vite.dev/config/).
 
