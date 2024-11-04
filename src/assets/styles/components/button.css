@@ -1,0 +1,24 @@
+.v-btn {
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.v-field {
+    border-radius: 0.5rem;
+}
+
+.v-field__field {
+    background-color: #fff;
+    border-radius: 0.5rem;
+}
+
+.v-field-label--floating {
+    background-color: white;
+    opacity: 1;
+    padding: 0 0.5rem;
+    border-radius: 100px;
+}
+
+.v-field--variant-outlined .v-label.v-field-label--floating {
+    margin: 0;
+}

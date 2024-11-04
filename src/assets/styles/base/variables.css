@@ -1,0 +1,34 @@
+:root {
+    /*
+    /* Todo: I need to double check the clamps, I might have made a mistake at the 48rem */
+    --spacing-regular: clamp(1rem, -0.355rem + 3.614vw, 2.5rem);
+
+    --spacing-medium: clamp(1.5rem, 0.859rem + 1.709vw, 2.5rem);
+    --spacing-small: clamp(1rem, 0.679rem + 0.855vw, 1.5rem);
+    --spacing-xsmall: clamp(0.5rem, -1.286rem + 4.762vw, 1rem);
+    --vertical-padding: clamp(2.5rem, -6.429rem + 23.81vw, 5rem);
+
+
+    /*TODO: Add fonts as clamp*/
+
+    --color-primary-ivory: #f0f0ea;
+    --color-primary-black: #21093a;
+    --color-primary-olive: #d9d4a7;
+    --color-primary-background: #fbfbf9;
+    --color-primary-pink: #e3d2ff;
+    --color-primary-purple: #aa93ff;
+    --color-primary-border: #4C2378;
+
+    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    --font-header: 'Bitter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+
+    /*--breakpoint-phone: 37.5rem; !* 37.5rem = 600px *!*/
+    --breakpoint-phone: 37.5rem;
+    --border-r-small: 6.25rem;
+    --border-r-medium: 12.5rem;
+    /* Radius scales: 100px @ 375px viewport -> 200px @ 600px viewport */
+    --border-r-default: clamp(6.25rem, -50px + 41.667vw, 12.5rem);
+}
+
+/*clamp reference: https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/*/
+

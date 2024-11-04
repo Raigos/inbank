@@ -1,0 +1,106 @@
+/**
+ * TODO: Discuss changing slider.
+ * Issue: Since the design seems like Vuetify, it would make sense to also use their slider.
+ * Current state: Hacked a solution to make the slider according to design and are missing some Vuetify details
+ * Suggestion: The design should be according to Vuetify specs instead.
+ */
+
+.v-slider-thumb__surface {
+    width: 3.25rem;
+    height: 2.25rem;
+    border-radius: var(--border-r-small);
+    background-color: var(--color-primary-purple);
+}
+
+/* Disable the animation hover/active effects. Currently it's too much work to fine tune the animation*/
+.v-slider-thumb__surface::before {
+    display: none;
+}
+
+.v-slider-thumb__ripple > * {
+    display: none;
+}
+
+.calculator__controls {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem
+}
+
+/* Replaces the thumb with arrows and piggybacks on thumb's functionality */
+.slider__thumb {
+    position: absolute;
+    top: 36px;
+    display: flex;
+    width: 52px;
+    left: 7px;
+}
+
+.slider__arrow--left {
+    position: absolute;
+}
+
+.slider__arrow--right {
+    position: absolute;
+    transform: rotate(180deg);
+}
+
+.v-slider-thumb__label {
+    background: transparent;
+}
+
+.v-slider.v-input--horizontal .v-slider-thumb__label::before {
+    border: none;
+}
+
+.v-field--variant-filled .v-field__overlay {
+    background-color: white;
+    opacity: 1;
+}
+
+.v-input--density-default .v-field--variant-filled .v-label.v-field-label--floating {
+    top: -7px
+}
+
+.v-field--active {
+    background-color: white;
+}
+
+.v-field__outline,
+.v-text-field__suffix {
+    color: var(--color-primary-border);
+}
+
+
+/*There is an issue with overwriting vuetify track size
+it causes the thumb to go overbounds. This is a hotfix*/
+
+.v-slider.v-input--horizontal {
+    padding-right: 2.5rem;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.v-slider-track__fill {
+    border-radius: 0;
+}
+
+.slider__wrapper {
+    position: relative;
+}
+
+.v-slider-track__background {
+    border-radius: 0;
+}
+
+.slider__track {
+    position: absolute;
+    height: 4px;
+    width: 40px;
+    background: #424242;
+    top: 14px;
+    right: .5rem;
+    opacity: 0.38;
+}
+
+/*hotfix end*/

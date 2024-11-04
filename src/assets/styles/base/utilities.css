@@ -1,0 +1,22 @@
+.card {
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.04);
+    border-radius: 0;
+    /* 100vh - padding - header */
+    height: calc(100vh - 40px - 78px);
+}
+
+@media screen and (min-width: 37.5rem) /* 37.5rem === 600px */ {
+    .card {
+        height: initial;
+        border-radius: 1.25rem;
+        margin: 2.5rem auto;
+        /* Clamp: 2.5rem at 37.5rem viewport | 5rem at 96rem viewport */
+    }
+}
+
+hr {
+    opacity: .15;
+    background-color: var(--color-primary-black);
+    /*height: 1px;*/
+    border-bottom: 0;
+}
