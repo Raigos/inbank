@@ -7,9 +7,9 @@ import PersonalDetailsForm from '@/components/PersonalDetailsForm.vue'
 const INCOME_THRESHOLD = 1000
 
 interface LoanDetails {
-  'Loan amount': number
-  'Loan period': number
-  'Monthly payment': number
+  'Loan amount': string
+  'Loan period': string
+  'Monthly payment': string
 }
 
 const props = defineProps<{
